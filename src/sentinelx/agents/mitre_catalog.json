@@ -1,0 +1,122 @@
+{
+  "version": "14.1",
+  "domain": "enterprise-attack",
+  "tactics": {
+    "TA0001": {"name": "Initial Access"},
+    "TA0002": {"name": "Execution"},
+    "TA0003": {"name": "Persistence"},
+    "TA0004": {"name": "Privilege Escalation"},
+    "TA0005": {"name": "Defense Evasion"},
+    "TA0006": {"name": "Credential Access"},
+    "TA0007": {"name": "Discovery"},
+    "TA0008": {"name": "Lateral Movement"},
+    "TA0009": {"name": "Collection"},
+    "TA0010": {"name": "Exfiltration"},
+    "TA0011": {"name": "Command and Control"},
+    "TA0040": {"name": "Impact"},
+    "TA0042": {"name": "Resource Development"},
+    "TA0043": {"name": "Reconnaissance"}
+  },
+  "techniques": {
+    "T1059": {
+      "name": "Command and Scripting Interpreter",
+      "tactics": ["TA0002"]
+    },
+    "T1059.004": {
+      "name": "Unix Shell",
+      "tactics": ["TA0002"]
+    },
+    "T1110": {
+      "name": "Brute Force",
+      "tactics": ["TA0006"]
+    },
+    "T1110.001": {
+      "name": "Password Guessing",
+      "tactics": ["TA0006"]
+    },
+    "T1110.003": {
+      "name": "Password Spraying",
+      "tactics": ["TA0006"]
+    },
+    "T1078": {
+      "name": "Valid Accounts",
+      "tactics": ["TA0001", "TA0003", "TA0004", "TA0005"]
+    },
+    "T1078.001": {
+      "name": "Default Accounts",
+      "tactics": ["TA0001", "TA0003", "TA0004", "TA0005"]
+    },
+    "T1078.003": {
+      "name": "Local Accounts",
+      "tactics": ["TA0001", "TA0003", "TA0004", "TA0005"]
+    },
+    "T1053": {
+      "name": "Scheduled Task/Job",
+      "tactics": ["TA0002", "TA0003", "TA0004"]
+    },
+    "T1053.003": {
+      "name": "Cron",
+      "tactics": ["TA0002", "TA0003", "TA0004"]
+    },
+    "T1548": {
+      "name": "Abuse Elevation Control Mechanism",
+      "tactics": ["TA0004", "TA0005"]
+    },
+    "T1548.003": {
+      "name": "Sudo and Sudo Caching",
+      "tactics": ["TA0004", "TA0005"]
+    },
+    "T1021": {
+      "name": "Remote Services",
+      "tactics": ["TA0008"]
+    },
+    "T1021.004": {
+      "name": "SSH",
+      "tactics": ["TA0008"]
+    },
+    "T1046": {
+      "name": "Network Service Discovery",
+      "tactics": ["TA0007"]
+    },
+    "T1070": {
+      "name": "Indicator Removal",
+      "tactics": ["TA0005"]
+    },
+    "T1070.002": {
+      "name": "Clear Linux Log Files",
+      "tactics": ["TA0005"]
+    },
+    "T1082": {
+      "name": "System Information Discovery",
+      "tactics": ["TA0007"]
+    },
+    "T1033": {
+      "name": "System Owner/User Discovery",
+      "tactics": ["TA0007"]
+    },
+    "T1003": {
+      "name": "OS Credential Dumping",
+      "tactics": ["TA0006"]
+    },
+    "T1003.008": {
+      "name": "/etc/passwd and /etc/shadow",
+      "tactics": ["TA0006"]
+    },
+    "T1036": {
+      "name": "Masquerading",
+      "tactics": ["TA0005"]
+    },
+    "T1057": {
+      "name": "Process Discovery",
+      "tactics": ["TA0007"]
+    },
+    "T1083": {
+      "name": "File and Directory Discovery",
+      "tactics": ["TA0007"]
+    },
+    "T1496": {
+      "name": "Resource Hijacking",
+      "tactics": ["TA0040"]
+    }
+  }
+}

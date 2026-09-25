@@ -1,0 +1,11 @@
+title: Failed SSH Login
+id: 5b4e3f3a-1d7c-471a-8c8f-a9a7a9fc77c7
+status: stable
+level: medium
+logsource:
+  service: auth.log
+detection:
+  selection:
+    process: sshd
+    message: '*Failed password*'
+  condition: selection

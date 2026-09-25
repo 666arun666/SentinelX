@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Testing and linting caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs and scratch files
+*.log
+err.log
+out.txt
+find_error.py
+scratch/
+
+# Operating System files
+.DS_Store
+Thumbs.db

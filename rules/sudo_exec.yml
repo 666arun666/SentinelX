@@ -1,0 +1,11 @@
+title: Sudo Execution
+id: f123a1a5-3a21-4f11-912f-929a656e18b8
+status: experimental
+level: low
+logsource:
+  service: auth.log
+detection:
+  selection:
+    process: sudo
+    message: '*COMMAND=*'
+  condition: selection
